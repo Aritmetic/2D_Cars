@@ -1,14 +1,17 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Cars/Car.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Art/Car_Images/race-car-top-down-clipart-2.png" type="Texture" id=2]
+[ext_resource path="res://Levels/Objects/RedCar.tscn" type="PackedScene" id=2]
 
 [node name="Test_Level" type="Node2D"]
 
-[node name="race-car-top-down-clipart-2" type="Sprite" parent="."]
-position = Vector2( 279.138, 321.585 )
-texture = ExtResource( 2 )
-
 [node name="Car" parent="." instance=ExtResource( 1 )]
-position = Vector2( 266.608, 249.474 )
-scale = Vector2( 3.44, 3.44 )
+position = Vector2( 593.529, 118.569 )
+rotation = -1.56608
+scale = Vector2( 2.21576, 2.21576 )
+
+[node name="Node2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 684.876, 75.5375 )
+
+[node name="Node2D2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 505.309, 72.796 )
